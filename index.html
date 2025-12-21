@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>Red Joker 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Red Joker 个人博客">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Red Joker 个人博客">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="Yan Jingchen">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Red Joker 个人博客" type="application/atom+xml">
   
   
     <link rel="shortcut icon" href="/favicon.png">
@@ -41,8 +41,12 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">Red Joker 个人博客</a>
       </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">IT信息技术博客站</a>
+        </h2>
       
     </div>
     <div id="header-inner" class="inner">
@@ -93,11 +97,21 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <h1 id="Github个人博客托管部署教程（上）"><a href="#Github个人博客托管部署教程（上）" class="headerlink" title="Github个人博客托管部署教程（上）"></a><em><strong>Github</strong></em>个人博客托管部署教程（上）</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是我在github个人托管页面上的第一篇博客（除了hexo提供的自动博客hello world），所以我也来<em>自己</em>写一篇博客介绍一下部署过程</p>
+<h2 id="1-注册github账号"><a href="#1-注册github账号" class="headerlink" title="1.注册github账号"></a>1.注册github账号</h2><p>这一步很简单就不再赘述了，但是有一点要说，就是GitHub的人机测试如果看不懂的话一定要查一下（比如我）</p>
+<h2 id="2-准备一下对应的环境"><a href="#2-准备一下对应的环境" class="headerlink" title="2.准备一下对应的环境"></a>2.准备一下对应的环境</h2><p>安装一下本地的git和nodejs<br>    git：<a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a><br>    nodejs：<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a><br>完成之后在安装一下hexo（可以理解为渲染工具）<br>也就是进入cmd，输入<code>npm install hexo -g</code><br>安装完成之后可以输入<code>hexo -x</code>测试是否安装成功<br>然后再执行<code>npm install --save hexo-deployer-git</code>就可以了</p>
+<h2 id="3-配置SSH-Key"><a href="#3-配置SSH-Key" class="headerlink" title="3.配置SSH Key"></a>3.配置SSH Key</h2><p>###1）配置ssh<br>先输入命令：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮件地址&quot;</span><br></pre></td></tr></table></figure>
+<p>然后清脆的3次回车<br>找到用户文件夹，会发现里面有一个.ssh文件夹<br>进入用记事本打开id_rsa.pub，并复制全部内容<br>###2）GitHub配置<br>在github个人设置中，打开SSH and GPG keys，点击<code>New SSH key</code><br>名字随便起，key粘贴刚刚复制的<br>保存后，在终端输入：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>然后输入Yes<br>最后配置账号密码</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;redjoker2025&quot; #你的github用户名</span><br><span class="line">$ git config --global user.email &quot;xxx@<span class="number">139</span>.com&quot; #填写你的github注册邮箱</span><br></pre></td></tr></table></figure>
+<p>剩下的下期再见</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/12/06/My-First-Blog/" data-id="cuidzlEAJYI_EJPnGnOu7sZq7" data-title="My-First-Blog" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/12/06/My-First-Blog/" data-id="cuidQ4F2CL-bM2CKBCZuAeOs9" data-title="My-First-Blog" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -148,7 +162,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/12/06/hello-world/" data-id="cuidd6WSvN3RxqqnHgf6ypnQ7" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/12/06/hello-world/" data-id="cuidNYpZIMQgwoSCpwbtlOuSG" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -211,7 +225,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
-      &copy; 2025 John Doe<br>
+      &copy; 2025 Yan Jingchen<br>
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
