@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Github个人博客托管部署教程（下） | Red Joker 个人博客</title>
+  <title>上一篇博客的附录 | Red Joker 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="gihub的具体步骤懒得写了，大家参考这篇文章吧https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;392994381今天来写一写具体的问题与解决方法1.部署依赖问题Q：提示ssh: connect to host github.com port 22: Connection refused怎么办？A：主要是因为网络环境限制导致的，比如有些运营商（特别是YD）。可以改用443端口连接在.ss">
+  <meta name="description" content="新建文章hexo new “文章标题”  # 简写：hexo n “标题” 新建页面（如关于页、标签页）hexo new page “about” 本地预览hexo server  # 简写：hexo s（默认端口4000，访问http:&#x2F;&#x2F;localhost:4000）hexo s -p 5000  # 自定义端口5000 生成静态文件hexo generate  # 简写：hexo g 部署到">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Github个人博客托管部署教程（下）">
-<meta property="og:url" content="http://example.com/2026/01/10/Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%8B%EF%BC%89/index.html">
+<meta property="og:title" content="上一篇博客的附录">
+<meta property="og:url" content="http://example.com/2026/01/10/%E4%B8%8A%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%99%84%E5%BD%95/index.html">
 <meta property="og:site_name" content="Red Joker 个人博客">
-<meta property="og:description" content="gihub的具体步骤懒得写了，大家参考这篇文章吧https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;392994381今天来写一写具体的问题与解决方法1.部署依赖问题Q：提示ssh: connect to host github.com port 22: Connection refused怎么办？A：主要是因为网络环境限制导致的，比如有些运营商（特别是YD）。可以改用443端口连接在.ss">
+<meta property="og:description" content="新建文章hexo new “文章标题”  # 简写：hexo n “标题” 新建页面（如关于页、标签页）hexo new page “about” 本地预览hexo server  # 简写：hexo s（默认端口4000，访问http:&#x2F;&#x2F;localhost:4000）hexo s -p 5000  # 自定义端口5000 生成静态文件hexo generate  # 简写：hexo g 部署到">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2026-01-10T10:01:16.000Z">
-<meta property="article:modified_time" content="2026-01-10T10:35:56.408Z">
+<meta property="article:published_time" content="2026-01-10T12:34:13.000Z">
+<meta property="article:modified_time" content="2026-01-10T12:36:31.400Z">
 <meta property="article:author" content="Yan Jingchen">
 <meta name="twitter:card" content="summary">
   
@@ -77,10 +77,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-Github个人博客托管部署教程（下）" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-上一篇博客的附录" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2026/01/10/Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%8B%EF%BC%89/" class="article-date">
-  <time class="dt-published" datetime="2026-01-10T10:01:16.000Z" itemprop="datePublished">2026-01-10</time>
+    <a href="/2026/01/10/%E4%B8%8A%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%99%84%E5%BD%95/" class="article-date">
+  <time class="dt-published" datetime="2026-01-10T12:34:13.000Z" itemprop="datePublished">2026-01-10</time>
 </a>
     
   </div>
@@ -91,7 +91,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Github个人博客托管部署教程（下）
+      上一篇博客的附录
     </h1>
   
 
@@ -99,17 +99,19 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>gihub的具体步骤懒得写了，大家参考这篇文章吧<code>https://zhuanlan.zhihu.com/p/392994381</code><br>今天来写一写具体的问题与解决方法<br>1.部署依赖问题<br>Q：提示<code>ssh: connect to host github.com port 22: Connection refused</code>怎么办？<br>A：主要是因为网络环境限制导致的，比如有些运营商（特别是YD）。可以改用<code>443</code>端口连接<br>在.ssh目录下新建一个<code>config</code>文件（无后缀）并写入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure>
-
-<p>2.另外，我们再来介绍一点其他知识<br>在使用hexo搭建博客的朋友，可以使用一个开源项目hexo hub，在gihub上就能搜索到，只需要选择hexo项目的文件夹，就可以编辑文章列表，面板设置。<br>项目链接：<code>https://github.com/forever218/HexoHub</code><br>这样甚至还可以更改一些网站的设置：比如网站的标题，副标题，和所有者等等。</p>
-<p>3.这样，你就拥有了纯属于自己的github pages，我的pages：<code>redjoker2025.github.io</code></p>
-<p>我们下一期来手工装一台家用nas。</p>
+        <h1 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h1><p>hexo new “文章标题”  # 简写：hexo n “标题”</p>
+<h1 id="新建页面（如关于页、标签页）"><a href="#新建页面（如关于页、标签页）" class="headerlink" title="新建页面（如关于页、标签页）"></a>新建页面（如关于页、标签页）</h1><p>hexo new page “about”</p>
+<h1 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h1><p>hexo server  # 简写：hexo s（默认端口4000，访问<a href="http://localhost:4000）">http://localhost:4000）</a><br>hexo s -p 5000  # 自定义端口5000</p>
+<h1 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h1><p>hexo generate  # 简写：hexo g</p>
+<h1 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h1><p>hexo deploy  # 简写：hexo d</p>
+<h1 id="清理缓存"><a href="#清理缓存" class="headerlink" title="清理缓存"></a>清理缓存</h1><p>hexo clean</p>
+<h1 id="一键部署（清缓存-生成-部署）"><a href="#一键部署（清缓存-生成-部署）" class="headerlink" title="一键部署（清缓存+生成+部署）"></a>一键部署（清缓存+生成+部署）</h1><p>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</p>
+<p>github加速器：watt toolkit（微软商店即可下载）</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/01/10/Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%8B%EF%BC%89/" data-id="cuidzzvFs-Uhs5wh7LaUxFtWX" data-title="Github个人博客托管部署教程（下）" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/01/10/%E4%B8%8A%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%99%84%E5%BD%95/" data-id="cuidm1z537cezqmU-CgvD7zCY" data-title="上一篇博客的附录" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -119,19 +121,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2026/01/10/%E4%B8%8A%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%99%84%E5%BD%95/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          上一篇博客的附录
-        
-      </div>
-    </a>
   
-  
-    <a href="/2025/12/06/My-First-Blog/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2026/01/10/Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%8B%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">My-First-Blog</div>
+      <div class="article-nav-title">Github个人博客托管部署教程（下）</div>
     </a>
   
 </nav>
