@@ -75,6 +75,50 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-IDAPro软件的安装与激活" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/05/04/IDAPro%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%BF%80%E6%B4%BB/" class="article-date">
+  <time class="dt-published" datetime="2026-05-04T08:46:23.000Z" itemprop="datePublished">2026-05-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/05/04/IDAPro%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%BF%80%E6%B4%BB/">IDAPro软件的安装与激活</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="IDA-Pro软件的安装与激活"><a href="#IDA-Pro软件的安装与激活" class="headerlink" title="IDA Pro软件的安装与激活"></a><strong>IDA Pro软件的安装与激活</strong></h1><h2 id="所需链接"><a href="#所需链接" class="headerlink" title="所需链接"></a>所需链接</h2><p>这是下载工具的磁力链接（源于看雪安全论坛）：magnet:?xt&#x3D;urn:btih:f24cfadb8a66b343bf1ff4f0c1386a5f6991c818&amp;dn&#x3D;ida91<br>使用迅雷即可下载</p>
+<h2 id="1-首先安装Python"><a href="#1-首先安装Python" class="headerlink" title="1.首先安装Python"></a>1.首先安装Python</h2><p>这一点我应该不用讲，python官网自己安装即可：<em><a target="_blank" rel="noopener" href="https://www.python.org/downloads/latest/pymanager/">https://www.python.org/downloads/latest/pymanager/</a></em><br>自己安装，一直下一步</p>
+<h2 id="2-安装本体"><a href="#2-安装本体" class="headerlink" title="2.安装本体"></a>2.安装本体</h2><p>安装安装包<code>ida-pro_91_x64win.exe</code>,需要管理员权限，赋予即可</p>
+<h2 id="3-进行激活"><a href="#3-进行激活" class="headerlink" title="3.进行激活"></a>3.进行激活</h2><p>复制<code>keygen_patch</code>目录中的文件<code>keygen.py</code>和<code>idapro.hexlic</code>文件到<code>IDA Pro</code>主目录下<br>使用编辑器修改<code>keygen.py</code>中的<code>name、email</code>字段为自定义即可。<code>start_date、end_date、issued_on</code>字段可无需修改。<br>运行<code>keygen.py</code>后会生成 <code>patch</code> 后的文件<code>ida.dll.patched</code>与<code>ida32.dll.patched</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python .\keygen.py</span><br></pre></td></tr></table></figure>
+<h4 id="避坑：此处需要注意，因program-files文件夹下普通用户只读，所以运行python脚本时cmd需要是管理员权限的"><a href="#避坑：此处需要注意，因program-files文件夹下普通用户只读，所以运行python脚本时cmd需要是管理员权限的" class="headerlink" title="避坑：此处需要注意，因program files文件夹下普通用户只读，所以运行python脚本时cmd需要是管理员权限的"></a>避坑：此处需要注意，因<code>program files</code>文件夹下普通用户只读，所以运行python脚本时<code>cmd</code>需要是管理员权限的</h4><h4 id="可以在开始菜单以管理员身份启动后用cd命令切换到这个目录"><a href="#可以在开始菜单以管理员身份启动后用cd命令切换到这个目录" class="headerlink" title="可以在开始菜单以管理员身份启动后用cd命令切换到这个目录"></a>可以在开始菜单以管理员身份启动后用<code>cd</code>命令切换到这个目录</h4><p>我们需要先将原先的文件<code>ida.dll</code>和<code>ida32.dll</code>备份到其他目录或直接删除，然后将补丁文件<code>ida.dll.patched</code>与<code>ida32.dll.patched</code>分别重新命名为<code>ida.dll</code>和<code>ida32.dll</code>。<br>接着，我们需要把<code>IDA Pro</code>与<code>Python3.11</code>环境进行关联。<br>运行<code>IDA Pro</code>主目录中的<code>idapyswitch.exe</code>选择刚安装的<code>Python3.11</code>，输入对应的数字回车即可完成关联。<br>此时就可以运行<code>IDA Pro</code>主体程序，选择<code>Help-&gt;License manager...</code>，勾选刚才我们生成的许可证即可完成激活了。<br>再次点击&#96;&#96;&#96;Help-&gt;About program…v即可查看激活状态。</p>
+<h3 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://mrx.hk/posts/0f4e4b9537a2da059095327c45b5b227/#1%E5%AE%89%E8%A3%85python311%E7%8E%AF%E5%A2%83</span><br><span class="line">https://bbs.kanxue.com/thread-285999.htm</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/05/04/IDAPro%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%BF%80%E6%B4%BB/" data-id="cuidPalb1A8W98DAQcH9O84lc" data-title="IDAPro软件的安装与激活" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-说人话AI编程使用帮助" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2026/03/15/%E8%AF%B4%E4%BA%BA%E8%AF%9DAI%E7%BC%96%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/" class="article-date">
@@ -188,7 +232,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/15/%E8%AF%B4%E4%BA%BA%E8%AF%9DAI%E7%BC%96%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/" data-id="cuidGh8itzZHZkmKvasktxavh" data-title="说人话AI编程使用帮助" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/03/15/%E8%AF%B4%E4%BA%BA%E8%AF%9DAI%E7%BC%96%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/" data-id="cuidJGqw0ftNuRqDcxfim8xHi" data-title="说人话AI编程使用帮助" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -234,7 +278,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/01/10/%E4%B8%8A%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%99%84%E5%BD%95/" data-id="cuidrbmmmrpl6uhvm1qTK3lih" data-title="上一篇博客的附录" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/01/10/%E4%B8%8A%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%99%84%E5%BD%95/" data-id="cuidnBZ_RZ4q4SslzX8NpOO02" data-title="上一篇博客的附录" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -278,7 +322,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/01/10/Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%8B%EF%BC%89/" data-id="cuidR1JdclOxiniC0dHF9z8ks" data-title="Github个人博客托管部署教程（下）" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/01/10/Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%8B%EF%BC%89/" data-id="cuidP3lSc5XMM_bCXGXSHmDeh" data-title="Github个人博客托管部署教程（下）" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -326,7 +370,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/12/06/My-First-Blog/" data-id="cuidVhTxBjudDxoeUp5ByuPcZ" data-title="My-First-Blog" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/12/06/My-First-Blog/" data-id="cuidyAAvtjo4ImCYw5UeulJ8L" data-title="My-First-Blog" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -356,7 +400,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/01/">January 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/12/">December 2025</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/05/">May 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/01/">January 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/12/">December 2025</a></li></ul>
     </div>
   </div>
 
@@ -367,6 +411,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2026/05/04/IDAPro%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%BF%80%E6%B4%BB/">IDAPro软件的安装与激活</a>
+          </li>
         
           <li>
             <a href="/2026/03/15/%E8%AF%B4%E4%BA%BA%E8%AF%9DAI%E7%BC%96%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/">说人话AI编程使用帮助</a>
